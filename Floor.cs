@@ -93,11 +93,7 @@ public class Floor : MonoBehaviour {
 	hanoi_work_time += 1;
 	target[hanoi_work_time] = n - 1;
 	goal[hanoi_work_time] = dest;
-//	Debug.Log(hanoi_work_time);
-//	Debug.Log(target[hanoi_work_time]);
-//	Debug.Log(goal[hanoi_work_time]);
-
-if (n >= 2) {
+	if (n >= 2) {
 	    hanoi(n - 1, work, from, dest);
 	}
     }
